@@ -1,0 +1,95 @@
+#boxes {
+    display: grid;
+    grid-gap: 2rem;
+}
+
+#boxes1 {
+    margin-top: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+#products {
+    text-align: center;
+    color: white;
+}
+
+#products > h1 {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.orange-down {
+    margin: auto;
+    font-size: large;
+    font-weight: 500;
+    color: orange;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+}
+
+@media (min-width:320px) {
+    #boxes {
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #boxes1 {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 50px;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        border-radius: 2%;
+        background-color: #1e2028;
+    }
+
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 20px;
+        padding-bottom: 50px;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        border-radius: 2%;
+    }
+
+    .box h2 {
+        margin-top: 1rem;
+        background-color: #1e2028;
+        text-align: center;
+    }
+
+    .box img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .box1 h1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+}
+
+@media (min-width:991px) {
+    #boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #boxes1 {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/* hi i am rajesh */

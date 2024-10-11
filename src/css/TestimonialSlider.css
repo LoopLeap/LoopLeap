@@ -1,0 +1,44 @@
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px; /* Adjust the height as needed */
+    background-color: rgb(8, 14, 35);
+  }
+  
+  .video-container {
+    display: flex;
+    animation: slide 30s linear infinite; /* Adjust duration as needed */
+    background-color: rgb(8, 14, 35);
+  }
+  
+  .video-slide {
+    width: 30%; /* Set each video slide to 30% width */
+    background-color: rgb(8, 14, 35);
+    margin-right: 80px; /* Set gap between videos */
+  }
+  
+  .video-slide:last-child {
+    margin-right: 0; /* Remove margin from the last video */
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(251, 192, 192, 0.319), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .paused {
+    animation-play-state: paused; /* Pause the animation */
+  }
+  

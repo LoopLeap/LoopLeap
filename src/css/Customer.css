@@ -1,0 +1,54 @@
+#customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 18px;
+    color: white;
+    padding-bottom: 5rem;
+}
+
+#support-img img {
+    width: 95%;
+}
+
+#support-text {
+    text-align: center;
+}
+
+#support-text h1,h3 {
+    font-weight: 500;
+    text-align: left;
+}
+
+#support-text h3 {
+    margin-top: 10px;
+    color: #8d8e94;
+}
+
+@media (min-width:991px) {
+    #customer {
+        text-align: center;
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width:1280px) {
+
+    #customer {
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    #support-text h1 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    #support-text h3 {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+}

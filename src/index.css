@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0d1319;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    background-color: #ff3172;
+}
