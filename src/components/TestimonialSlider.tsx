@@ -15,7 +15,7 @@ const TestimonialSlider: React.FC<{ videos: string[] }> = ({ videos }) => {
               <source src={video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div style={{ marginTop : "10px" ,backgroundColor:'transparent' , color:"white",display : "flex" , justifyContent: "center"}} >  <span style={{color:"white"}}> detaisl</span> </div>
+            <div style={{ marginTop : "10px" ,backgroundColor:'transparent' , color:"white",display : "flex-col" , justifyContent: "center"}} >  <span style={{color:"white"}}> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</span> </div>
            
           </div>
         ))}

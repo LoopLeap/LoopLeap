@@ -1,0 +1,70 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index : 1
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    background-color: white;
+  }
+  .top-div > h2{
+   
+    background-color: white;
+  }
+
+  .top-div {
+    justify-content: space-between;
+  }
+  .top-div > button{
+    border: none;
+    color: red;
+    background-color: white;
+
+  }
+
+  .modal-content > form{
+   
+    background-color: white;
+  }
+
+  .modal-content > button{
+   
+    background-color: white;
+  }
+
+  form > button {
+    background-color: white;
+  }
+  
+  input, textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border-width: thin;
+    border-color: grey;
+  }
+
+  .submitButton {
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 9rem;
+
+
+
+  }
+  
