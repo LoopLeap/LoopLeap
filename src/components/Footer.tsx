@@ -17,7 +17,7 @@ function App() {
                     <h3>Social</h3>
                     <ul style={{listStyle:'none'}}>
                         <li style={{color:'#b2d1f5'}}><a href="https://twitter.com/exploringengin1"><img src="/twitter.svg" alt="" /></a></li>
-                        <li style={{color:'#b2d1f5'}}><a href="https://github.com/rajesh604"><img src="/github.svg" alt="" /></a></li>
+                        <li style={{color:'#b2d1f5'}}><a href="https://github.com/LoopLeap"><img src="/github.svg" alt="" /></a></li>
                     </ul>
                 </div>
             </div>
