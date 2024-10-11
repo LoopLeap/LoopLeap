@@ -12,9 +12,9 @@ import TestimonialSlider from './components/TestimonialSlider';
 
 function App() {
   const videos = [
-    'public/videos/5086645-uhd_3840_2160_30fps.mp4',
-    'public/videos/5086645-uhd_3840_2160_30fps.mp4',
-    'public/videos/5086645-uhd_3840_2160_30fps.mp4',
+    '/videos/5086645-uhd_3840_2160_30fps.mp4',
+    '/videos/5086645-uhd_3840_2160_30fps.mp4',
+    '/videos/5086645-uhd_3840_2160_30fps.mp4',
   ];
 
   return (
@@ -22,7 +22,7 @@ function App() {
       <TopHeader />
       <LowScreen />
       <MiddleHeader />
-      <VideoBanner videoSrc = 'public/videos/5086645-uhd_3840_2160_30fps.mp4' overlayText='Unleash the possibilities'/>
+      <VideoBanner videoSrc = '/videos/5086645-uhd_3840_2160_30fps.mp4' overlayText='Unleash the possibilities'/>
       <Section1 /> 
       <Products />
       <Build />
