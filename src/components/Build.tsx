@@ -4,7 +4,7 @@ function App() {
     return (
         <section id="build">
             <div id="build-inner">
-                <h2>Built for all types of projects with our services</h2>
+                <h2>Build any kind of <span style={{color:'rgb(114 17 190)'}}>Projects</span> with our <span style={{color:'rgb(221 9 169)'}}>Services</span></h2>
                 <div id="block-contain">
                     <div className="block">
                         <h3>Web Development</h3>
