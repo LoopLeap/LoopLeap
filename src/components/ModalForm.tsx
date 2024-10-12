@@ -12,7 +12,7 @@ interface FormData {
   name: string;
   email: string;
   phone: string;
-  age: string;
+  domain: string;
   regarding: string;
   profession: string;
 }
@@ -22,7 +22,7 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, onClose }) => {
     name: '',
     email: '',
     phone: '',
-    age: '',
+    domain: '',
     regarding: '',
     profession: '',
   });
@@ -36,7 +36,7 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, onClose }) => {
     e.preventDefault();
    console.log(formData);
 
-    const url = `https://script.google.com/macros/s/AKfycbwOze2ugy8b9-HYeaTBvSPSbEp2Tp5TsBfyRLwxUAZ3hoPa6FEE9InHSK-3G_LBMJnQqw/exec?action=insertDataNoDup&sheeturl=https://docs.google.com/spreadsheets/d/1opZ_Yo3kplM3yRA1OeqTH0czYTurpTfs8Q9_BFhWX30/edit&sheetname=Submit&number=${encodeURIComponent(formData.phone)}&var1=${encodeURIComponent(formData.phone)}&var2=${encodeURIComponent(formData.name)}&var4=${encodeURIComponent(formData.regarding)}&var5=${encodeURIComponent(formData.profession)}&var6=${encodeURIComponent(formData.age)}&var7=${encodeURIComponent(formData.email)}&datecol=3`;
+    const url = `https://script.google.com/macros/s/AKfycbwOze2ugy8b9-HYeaTBvSPSbEp2Tp5TsBfyRLwxUAZ3hoPa6FEE9InHSK-3G_LBMJnQqw/exec?action=insertDataNoDup&sheeturl=https://docs.google.com/spreadsheets/d/1opZ_Yo3kplM3yRA1OeqTH0czYTurpTfs8Q9_BFhWX30/edit&sheetname=Submit&number=${encodeURIComponent(formData.phone)}&var1=${encodeURIComponent(formData.phone)}&var2=${encodeURIComponent(formData.name)}&var4=${encodeURIComponent(formData.regarding)}&var5=${encodeURIComponent(formData.profession)}&var6=${encodeURIComponent(formData.domain)}&var7=${encodeURIComponent(formData.email)}&datecol=3`;
 
     try {
         // Use await for the fetch call
@@ -51,7 +51,7 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, onClose }) => {
             name: '',
             email: '',
             phone: '',
-            age: '',
+            domain: '',
             regarding: '',
             profession: '',
         });
@@ -73,7 +73,7 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, onClose }) => {
           <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
           <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
           <input type="tel" name="phone" placeholder="Phone" onChange={handleChange} required />
-          <input type="number" name="age" placeholder="Age" onChange={handleChange} required />
+          <input type="text" name="domain" placeholder="Domain" onChange={handleChange} required />
           <textarea name="regarding" placeholder="Regarding" onChange={handleChange} required />
           <input type="text" name="profession" placeholder="Profession" onChange={handleChange} required />
           <button className='submitButton' type="submit">Submit</button>
